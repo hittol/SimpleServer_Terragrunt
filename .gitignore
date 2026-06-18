@@ -1,0 +1,14 @@
+# Terragrunt/Terraform
+.terragrunt-cache/
+.terragrunt-state/
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+terraform.tfvars
+*.auto.tfvars
+
+# local secrets
+*.pem
+*.pfx
+*.key
