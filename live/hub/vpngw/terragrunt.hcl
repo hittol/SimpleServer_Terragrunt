@@ -4,7 +4,7 @@ include "root" {
 }
 
 terraform {
-  source = "../../../source/vpngw"
+  source = "../../../modules/vpngw"
 }
 
 dependency "rg" {

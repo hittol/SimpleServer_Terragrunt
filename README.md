@@ -49,10 +49,6 @@ terragrunt run-all plan
 terragrunt run-all apply
 ```
 
-### .key 폴더 추가
-
-live 에서 vm , aks 사용 시 폴더 내부에 .key 폴더를 생성해주세요
-
 
 ### Backend 교체
 

@@ -4,7 +4,7 @@ include "root" {
 }
 
 terraform {
-  source = "../../../source/natgw"
+  source = "../../../modules/natgw"
 }
 
 dependency "rg" {

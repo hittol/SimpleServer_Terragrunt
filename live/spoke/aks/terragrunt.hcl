@@ -10,7 +10,7 @@ locals {
 }
 
 terraform {
-  source = "../../../source/aks"
+  source = "../../../modules/aks"
 }
 
 dependency "man_rg" {
@@ -108,6 +108,7 @@ inputs = {
         lb_sku                = "standard"
         service_cidr          = "10.22.0.0/24"
         dns_ip                = "10.22.0.4"
+        outbound_type         = "userDefinedRouting"
       }
 
       linux_profile           = {

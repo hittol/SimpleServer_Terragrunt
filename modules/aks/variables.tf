@@ -46,6 +46,7 @@ variable "aks_setting" {
       lb_sku                = string
       service_cidr          = string
       dns_ip                = string
+      outbound_type         = string
     })
 
     linux_profile           = object({

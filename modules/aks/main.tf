@@ -92,6 +92,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
     load_balancer_sku   = each.value.network_profile.lb_sku
     service_cidr        = each.value.network_profile.service_cidr
     dns_service_ip      = each.value.network_profile.dns_ip
+    outbound_type       = each.value.network_profile.outbound_type
   } 
 
   azure_active_directory_role_based_access_control {

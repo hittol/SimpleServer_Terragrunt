@@ -10,7 +10,7 @@ locals {
 }
 
 terraform {
-  source = "../../../source/privatedns"
+  source = "../../../modules/privatedns"
 }
 
 dependency "managed_rg" {

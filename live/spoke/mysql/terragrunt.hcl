@@ -10,7 +10,7 @@ locals {
 }
 
 terraform {
-  source = "../../../source/mysql"
+  source = "../../../modules/mysql"
 }
 
 dependency "man_rg" {

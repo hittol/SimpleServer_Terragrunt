@@ -10,7 +10,7 @@ locals {
 }
 
 terraform {
-  source = "../../../source/rg"
+  source = "../../../modules/rg"
 }
 
 inputs = {

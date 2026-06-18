@@ -10,7 +10,7 @@ locals {
 }
 
 terraform {
-  source = "../../../source/peering"
+  source = "../../../modules/peering"
 }
 
 dependency "hub_rg" {

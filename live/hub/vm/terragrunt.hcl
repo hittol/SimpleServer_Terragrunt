@@ -10,7 +10,7 @@ locals {
 }
 
 terraform {
-  source = "../../../source/vm"
+  source = "../../../modules/vm"
 }
 
 dependency "rg" {

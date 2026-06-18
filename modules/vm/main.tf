@@ -145,8 +145,9 @@ resource "azurerm_virtual_machine_extension" "CustomScripts_extension" {
   name                       = "AzureCustomSciptsExtension"
   virtual_machine_id         = azurerm_linux_virtual_machine.vm[each.key].id
   publisher                  = "Microsoft.Azure.Extensions"
-  type                       = "AzureMonitorLinuxAgent"
-  type_handler_version       = "CustomScript"
+  type                       = "CustomScript"
+  type_handler_version       = "2.1"
+  
   auto_upgrade_minor_version = true
 
   protected_settings = jsonencode({
